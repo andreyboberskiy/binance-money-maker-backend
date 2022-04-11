@@ -8,7 +8,7 @@
     "start": "node --experimental-specifier-resolution=node src/index.js",
     "dev": "NODE_ENV=development nodemon --experimental-specifier-resolution=node --inspect src/index.js",
     "prod": "NODE_ENV=production node --experimental-specifier-resolution=node src/index.js",
-    "prod:pm2": "NODE_ENV=production pm2 start src/index.js"
+    "prod:pm2": "NODE_ENV=production pm2 start src/index.js --node-args=\"--experimental-specifier-resolution=node\""
   },
   "author": "",
   "license": "ISC",
